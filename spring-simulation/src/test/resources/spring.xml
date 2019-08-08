@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byType">
+
+    <!--<bean id="userDao" class="cn.blackbulb.dao.impl.UserDaoImpl"/>-->
+    <bean id="userDao1" class="cn.blackbulb.dao.impl.UserDaoImpl1"/>
+    <bean id="orderDao" class="cn.blackbulb.dao.impl.OrderDaoImpl"/>
+    <bean id="userService" class="cn.blackbulb.service.UserService">
+        <!--<property name="userDao" ref="userDao"/>-->
+        <!--<constructor-arg name="userDao" ref="userDao"/>-->
+    </bean>
+</beans>
