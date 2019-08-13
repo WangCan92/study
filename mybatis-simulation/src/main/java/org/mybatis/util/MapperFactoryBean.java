@@ -2,7 +2,6 @@ package org.mybatis.util;
 
 import org.mybatis.anno.SelectSql;
 import org.springframework.beans.factory.FactoryBean;
-import org.springframework.stereotype.Component;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
