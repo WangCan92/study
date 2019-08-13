@@ -12,6 +12,7 @@
         <module>poxy</module>
         <module>spring-simulation</module>
         <module>param-validate</module>
+        <module>mybatis-simulation</module>
     </modules>
 
 
