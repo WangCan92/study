@@ -1,5 +1,6 @@
 package cn.blackbulb.pojo.request;
 
+import cn.blackbulb.annos.Emails;
 import cn.blackbulb.pojo.common.BaseRequest;
 import org.springframework.validation.annotation.Validated;
 
@@ -30,6 +31,8 @@ public class TestParam extends BaseRequest {
     private Date tomorrow;
     @Past
     private Date yesterday;
+    @Emails(message = "邮件哥哥哥哥")
+    private String exteralEmails;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -89,5 +92,13 @@ public class TestParam extends BaseRequest {
 
     public void setYesterday(Date yesterday) {
         this.yesterday = yesterday;
+    }
+
+    public String getExteralEmails() {
+        return exteralEmails;
+    }
+
+    public void setExteralEmails(String exteralEmails) {
+        this.exteralEmails = exteralEmails;
     }
 }
