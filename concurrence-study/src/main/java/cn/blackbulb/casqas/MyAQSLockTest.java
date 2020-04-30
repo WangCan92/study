@@ -22,7 +22,7 @@ public class MyAQSLockTest {
 
     public static void main(String[] args) {
         MyAQSLockTest test = new MyAQSLockTest();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 200; i++) {
             new Thread(() -> {
                 try {
                     TimeUnit.SECONDS.sleep(1);

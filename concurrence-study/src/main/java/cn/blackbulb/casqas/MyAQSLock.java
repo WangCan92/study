@@ -22,10 +22,11 @@ public class MyAQSLock implements Lock {
                 if (compareAndSetState(0, arg)) {
                     setExclusiveOwnerThread(Thread.currentThread());
                     return true;
-                }else if(Thread.currentThread()==getExclusiveOwnerThread()){
-                    //线程可重入
-                    setState(getState()+arg);
                 }
+            }else if(Thread.currentThread()==getExclusiveOwnerThread()){
+                //线程可重入
+                setState(getState()+arg);
+                return true;
             }
             return false;
         }
