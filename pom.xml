@@ -24,6 +24,7 @@
         <module>redis-study</module>
         <module>web-program-io</module>
         <module>design-model</module>
+        <module>zookeeper</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
